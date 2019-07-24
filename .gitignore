@@ -86,3 +86,8 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+target
+.nrepl-port
+.rebel_readline_history
+.cpcache
