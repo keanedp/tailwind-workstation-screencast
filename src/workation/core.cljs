@@ -38,9 +38,9 @@
    (for [d destinations]
      [destination-card d])])
 
-(defn mount-city-cards []
+(defn mount-destination-cards []
   (let [el (gdom/getElement "city-cards")]
     (reagent/render-component [destination-cards] el)))
 
-(mount-city-cards)
+(mount-destination-cards)
 
