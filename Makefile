@@ -34,11 +34,11 @@ clean-deploy:
 
 deploy/public:
 	@echo "Creating deploy/public"
-	cp -r resources/public deploy/public
+	rsync -av --progress resources/public deploy --exclude css
 
 deploy/public/css/tailwind.css:
 	@echo "Compiling CSS"
-	./node_modules/.bin/postcss resources/css/tailwind.css -o deploy/public/css/tailwind.css
+	BUILD_ENV=prod ./node_modules/.bin/postcss resources/css/tailwind.css -o deploy/public/css/tailwind.css
 
 deploy: clean-deploy deploy/public deploy/public/css/tailwind.css
 	@echo "Creating deployment build"
