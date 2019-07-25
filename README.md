@@ -13,6 +13,10 @@ Demo site: https://tailwind-reagent.firebaseapp.com/
 To get an interactive development environment run:
 
     make dev
+    
+To clean dev target:
+
+    make clean-dev
 
 To create css:
 
@@ -22,12 +26,10 @@ To watch for css changes:
 
     make css-watch
 
-To clean all compiled files:
-
-    make clean
-
 To create a production build run:
 
-	rm -rf target/public
-	clojure -A:fig:min
+	make deploy
+    
+To clean deploy target:
 
+    make clean-deploy
