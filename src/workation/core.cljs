@@ -26,8 +26,8 @@
 (defn destination-card [{:keys [city average-price property-count img-url img-alt]}]
   [:div {:class "mt-6 w-full px-4 lg:w-1/2 xl:w-1/3"}
    [:div {:class "flex items-center rounded-lg bg-white shadow-lg overflow-hidden"}
-    [:img {:class "h-32 w-24 flex-shrink-0 object-cover object-center" :src img-url :alt img-alt}]
-    [:div {:class "px-6 py-4"}
+    [:img {:class "h-40 w-32 flex-shrink-0 object-cover object-center" :src img-url :alt img-alt}]
+    [:div {:class "px-4 py-4"}
      [:h3 {:class "text-lg font-semibold text-gray-800"} city]
      [:p {:class "text-gray-600"} (str "$" average-price " / night average")]
      [:div {:class "mt-4"}
