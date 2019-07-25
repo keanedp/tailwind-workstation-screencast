@@ -6,6 +6,8 @@ This is a CLJS Reagent app that follows along with Tailwind's Workation screenca
 
 Original Tailwind screencast can be found at: https://tailwindcss.com/course/setting-up-tailwind-and-postcss
 
+Demo site: https://tailwind-reagent.firebaseapp.com/
+
 ## Development
 
 To get an interactive development environment run:
