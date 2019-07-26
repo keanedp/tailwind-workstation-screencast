@@ -22,7 +22,7 @@ css-once:
 
 css-watch:
 	@echo "Watching CSS"
-	./node_modules/.bin/postcss -w --verbose resources/css/tailwind.css -o resources/public/css/styles.css
+	./node_modules/.bin/postcss -w --verbose resources/css/tailwind.css -o resources/public/css/tailwind.css
 
 #############################
 # Deployment build targets #

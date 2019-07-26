@@ -1,4 +1,6 @@
 ^{:watch-dirs ["src"]
   :css-dirs ["resources/public/css"]
   :auto-testing false}
-{:main workation.core}
+{:main workation.core
+ :output-to "target/public/js/tailwind.js"
+ :output-dir "target/public/js/"}

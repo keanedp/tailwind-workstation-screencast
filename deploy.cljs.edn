@@ -1,6 +1,5 @@
 ^{:watch-dirs ["src"]}
 {:optimizations :advanced
  :pretty-print false
- :output-to "deploy/public/cljs-out/dev-main.js"}
- ;:output-dir "deploy/public/cljs-out/"}
+ :output-to "deploy/public/js/tailwind.js"}
 
